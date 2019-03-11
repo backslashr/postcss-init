@@ -1,0 +1,38 @@
+{
+  "name": "postcss-setup",
+  "version": "1.0.0",
+  "description": "basic postcss setup using webpack",
+  "main": "index.js",
+  "keywords": [
+    "postcss",
+    "css",
+    "webpack"
+  ],
+  "author": "backslashr",
+  "license": "ISC",
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p --config ./webpack/webpack.config.js --display-error-details",
+    "watch": "NODE_ENV=development webpack -d --watch --config ./webpack/webpack.config.js --display-error-details"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.10",
+    "css-loader": "^2.1.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "postcss": "^7.0.14",
+    "postcss-cli": "^6.1.2",
+    "postcss-color-function": "^4.0.1",
+    "postcss-discard-comments": "^4.0.2",
+    "postcss-discard-empty": "^4.0.1",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-simple-vars": "^5.0.2",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
